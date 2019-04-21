@@ -1,0 +1,31 @@
+{
+  "name": "edrl",
+  "version": "1.0.0",
+  "description": "Pure evironment of developing React library.",
+  "private": true,
+  "dependencies": {
+    "webpack": "*",
+    "webpack-merge": "*",
+    "clean-webpack-plugin": "*",
+    "css-loader": "*",
+    "style-loader": "*",
+    "less-loader": "*",
+    "awesome-typescript-loader": "*",
+    "less": "*",
+    "typescript": "*",
+    "react": "*",
+    "react-dom": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*"
+  },
+  "devDependencies": {
+    "webpack-cli": "*"
+  },
+  "scripts": {
+    "build": "set NODE_ENV=production && npx webpack --config webpack.prod.js",
+    "dev": "set NODE_ENV=development && npx webpack --watch --config webpack.dev.js"
+  },
+  "keywords": [],
+  "author": "IplayLF2",
+  "license": "ISC"
+}
