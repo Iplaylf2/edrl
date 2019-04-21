@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "moduleResolution": "node",
+        "module": "es6",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "lib": [
             "es6",
             "dom"
