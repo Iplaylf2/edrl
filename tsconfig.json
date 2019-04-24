@@ -1,21 +1,16 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-        "module": "es6",
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "lib": [
-            "es6",
-            "dom"
-        ],
-        "target": "es6",
-        "jsx": "react",
-        "baseUrl": ".",
-        "paths": {
-            "@Src/*": [
-                "src/*"
-            ]
-        },
-        "noImplicitAny": true,
-    }
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["es6", "dom"],
+    "target": "es6",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@Src/*": ["src/*"]
+    },
+    "noImplicitAny": true
+  }
 }

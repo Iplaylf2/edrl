@@ -11,6 +11,7 @@
     "style-loader": "*",
     "less-loader": "*",
     "awesome-typescript-loader": "*",
+    "source-map-loader": "*",
     "less": "*",
     "typescript": "*",
     "react": "*",
