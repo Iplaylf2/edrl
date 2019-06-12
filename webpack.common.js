@@ -1,5 +1,5 @@
 ﻿const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -23,7 +23,7 @@ module.exports = {
         loader: "awesome-typescript-loader"
       },
       {
-        test: /\.less$/,
+        test: /\.module\.less$/,
         use: [
           {
             loader: "style-loader"
@@ -33,6 +33,20 @@ module.exports = {
             options: {
               modules: true
             }
+          },
+          {
+            loader: "less-loader"
+          }
+        ]
+      },
+      {
+        test: /(?<!\.module)\.less$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
           },
           {
             loader: "less-loader"

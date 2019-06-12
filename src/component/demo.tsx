@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./demo.less";
+import style from "./demo.module.less";
 export default function() {
-  return <div className={style.demo}>hello world</div>;
+  return <div className={style["demo"]}>hello world</div>;
 }
